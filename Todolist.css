@@ -1,0 +1,114 @@
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 2px solid;
+  }
+  
+  .close {
+    cursor: pointer;
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+  
+  .item:hover .close {
+    opacity: 1;
+  }
+  
+  .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid greenyellow;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .strike {
+    text-decoration: line-through;
+  }
+  
+ /* Centering the entire Todolist component on the page */
+body {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Optional: Light background to enhance contrast */
+  }
+  
+  .todolist-container {
+    width: 700px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #ffffff; /* White background for the todo list container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-container input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc; /* Light grey border for input */
+    border-radius: 4px;
+  }
+  
+  .input-container button {
+    padding: 8px 16px;
+    margin-left: 8px;
+    background-color: #007bff; /* Blue background for the button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .input-container button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #007bff; /* Blue border for each task item */
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Light background for tasks */
+  }
+  
+  .todo-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .text {
+    flex-grow: 1;
+  }
+  
+  .text.completed {
+    text-decoration: line-through;
+    color: #888; /* Grey text for completed tasks */
+  }
+  
+  .delete {
+    margin-left: 10px;
+    padding: 4px 8px;
+    background-color: #ff4d4d; /* Red background for delete button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete:hover {
+    background-color: #cc0000; /* Darker red on hover */
+  }
+  
